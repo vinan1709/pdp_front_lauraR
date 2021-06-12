@@ -1,0 +1,269 @@
+@font-face {
+  src: url("../fonts/adineuepro/adineueprocond_bold.woff") format("woff");
+  font-family: "adineueprocond";
+  font-weight: 100;
+}
+@font-face {
+  src: url("adihausdin-font-path/adihausdin_cn.woff") format("woff");
+  font-family: "adihausdin_cn";
+  font-weight: 100;
+}
+@font-face {
+  src: url("../fonts/adihausdin/adihausdin_cn.woff2") format("woff2");
+  font-family: "adihausdin";
+  font-weight: 100;
+}
+h1 {
+  color: #db8f59;
+  font-family: "adineueprocond";
+  font-size: 120.5px;
+  line-height: 99.5px;
+  letter-spacing: 8.8px;
+}
+
+body {
+  background-image: url(../img/bg/1.jpg);
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.container .right, .container .left {
+  width: 50%;
+}
+
+.container .left {
+  z-index: 1;
+}
+
+.container .right:last-child {
+  text-align: right;
+}
+
+.img-border {
+  border: 2px solid #db8f59;
+  padding: 0px 10px 10px 0px;
+  border-top: none;
+  border-left: none;
+  margin-top: 14em;
+}
+
+p, h3 {
+  font-family: "adihausdin";
+}
+
+p {
+  font-size: 33.5px;
+  line-height: 43.5px;
+  letter-spacing: 2.45px;
+  color: #404040;
+}
+
+.left p {
+  margin: 0px;
+}
+
+.left > p {
+  margin-bottom: 2em;
+}
+
+.right h3 {
+  font-size: 45.5px;
+  line-height: 62px;
+  color: #000000;
+}
+
+.left h3 {
+  font-family: "adineueprocond";
+  font-size: 47.5px;
+  letter-spacing: 3.47px;
+  color: #db8f59;
+  margin: 1em 0 0 0;
+}
+
+.black-title {
+  font-family: "adineueprocond";
+  font-size: 110.5px;
+  line-height: 95.5px;
+  letter-spacing: 8.07px;
+  color: #000000;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  padding: 5em;
+}
+
+header img {
+  width: 185px;
+}
+
+.text-contain {
+  width: 65%;
+  margin-bottom: 2em;
+}
+
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 40em;
+  position: relative;
+  left: -72px;
+}
+
+.slider ul {
+  padding: 0px;
+  display: flex;
+  width: 300%;
+  animation: change 2s infinite;
+  animation-direction: alternate;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes change {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  33% {
+    margin-left: -100%;
+  }
+  63% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+.animate-img {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*RESPONSIVE*/
+@media screen and (min-width: 1400px) and (max-width: 2560px) {
+  body {
+    width: 1300px;
+    margin: auto;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 95.5px;
+  }
+
+  .slider {
+    margin-top: 55em;
+    left: 40px;
+  }
+
+  .text-contain {
+    width: 90%;
+  }
+}
+@media (max-width: 980px) {
+  body {
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  .container {
+    flex-flow: column-reverse;
+  }
+
+  .container .right, .container .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container .right:last-child {
+    text-align: center;
+  }
+
+  .img-border {
+    padding: 10px;
+    border-top: 2px solid #db8f59;
+    border-left: 2px solid #db8f59;
+    margin-top: 0;
+  }
+
+  .slider {
+    position: inherit;
+    margin-top: 0;
+  }
+
+  .text-contain {
+    width: 90%;
+    margin: auto;
+  }
+
+  .left img {
+    width: 90%;
+  }
+
+  .black-title {
+    font-size: 60.5px;
+  }
+
+  .right > img {
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .black-title {
+    font-size: 25.5px;
+  }
+
+  .right > img {
+    width: 90%;
+  }
+
+  h1, h3 {
+    font-size: 33px !important;
+    line-height: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
